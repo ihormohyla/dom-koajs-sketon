@@ -4,7 +4,7 @@ module.exports = {
         version: '0.1.0'
     },
     server: {
-        port: 5555
+        port: process.env.NODE_APP_INSTANCE
     },
     template: {
         path: 'app/views',

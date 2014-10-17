@@ -6,6 +6,18 @@ module.exports = {
     server: {
         port: 5555
     },
+    i18n : {
+        defaultLocale: 'ru',
+        // setup some locales - other locales default to en silently
+        locales: ['ru', 'ua', 'en'],
+
+        // sets a custom cookie name to parse locale settings from
+        cookie: 'lang',
+
+        // where to store json files - defaults to './locales'
+        directory: __dirname + '/locales'
+    },
+
     template: {
         path: 'app/views',
         options: {

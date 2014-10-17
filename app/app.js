@@ -4,6 +4,11 @@ var koa = require('koa'),
 
 var app = koa();
 
+app.use(function * (next){
+    this.locals = {};
+    yield next;
+});
+require('./helpers/i18n')(app);
 //Comment this line to disable sessions
 //require('./helpers/session')(app);
 

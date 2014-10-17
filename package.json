@@ -22,7 +22,11 @@
     "passport-local": "*",
     "ect": "*",
     "requirejs": "2.1.14",
-    "bower": "*"
+    "bower": "*",
+    "cookie-parser": "^1.1.0",
+    "i18n": "*",
+    "merge" : "*",
+    "thunkify" : "*"
   },
   "devDependencies": {
     "jasmine-node": "*"
