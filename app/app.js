@@ -5,15 +5,15 @@ var koa = require('koa'),
 var app = koa();
 
 //Comment this line to disable sessions
-require('./helpers/session')(app);
+//require('./helpers/session')(app);
 
 //Comment this line to disable koa-body-parser
 require('./helpers/bodyparser')(app);
 
 require('./helpers/render')(app);
 
-app.use(passport.initialize());
-app.use(passport.session());
+//app.use(passport.initialize());
+//app.use(passport.session());
 
 require('./routes')(app, passport);
 

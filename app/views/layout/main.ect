@@ -3,10 +3,12 @@
 <head>
     <meta charset="utf-8">
     <title><%- @title %></title>
+    <% include 'app/views/layout/partials/init_js.ect' %>
 </head>
 <body>
+<% include 'app/views/layout/partials/header.ect' %>
 <% content %>
 <hr>
-<% include 'app/views/layout/footer.ect' %>
+<% include 'app/views/layout/partials/footer.ect' %>
 </body>
 </html>

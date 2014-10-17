@@ -1,14 +1,15 @@
 {
-  "name": "myKoajsApp",
+  "name": "",
   "version": "0.2.0",
   "description": "A simple Koajs Application Skeleton",
   "author": {
-    "name": "Oleg Cherniy",
-    "email": "oleg.cherniy@gmail.com"
+    "name": "Ihor Mohyla",
+    "email": "ihor.mohyla@ria.com"
   },
   "directories": {
     "lib": "./app/controllers",
-    "test": "./test"
+    "test": "./test",
+    "public": "./public"
   },
   "dependencies": {
     "config": "*",
@@ -17,16 +18,19 @@
     "koa-render": "*",
     "koa-sess": "*",
     "koa-passport": "*",
-    "koa-body-parser": "*",
+    "koa-bodyparser": "*",
     "passport-local": "*",
-    "ect": "*"
+    "ect": "*",
+    "requirejs": "2.1.14",
+    "bower": "*"
   },
   "devDependencies": {
     "jasmine-node": "*"
   },
   "scripts": {
     "start": "node --harmony index.js",
-    "test": "node --harmony ./node_modules/jasmine-node/lib/jasmine-node/cli.js spec"
+    "test": "node --harmony ./node_modules/jasmine-node/lib/jasmine-node/cli.js spec",
+    "build": "cd ./public; bower install -f; r.js -o ./app/build.js && ./compress.sh"
   },
   "engines": {
     "node": ">=0.11.x"

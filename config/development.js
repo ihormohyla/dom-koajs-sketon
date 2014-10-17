@@ -12,9 +12,9 @@ module.exports = {
             ext: 'ect',
             cache: false,
             locals : {
-                js_domain : "http://img.dom.dev-ria.com", //"http://img.dom.ria.com", "http://img.dom.test-ria.com"
+                js_domain : "http://img.dom.dev-ria.com",
                 js_version : "0.0.1",
-                js_builds : "" // "/builds"
+                js_builds : ""
             }
         }
     },

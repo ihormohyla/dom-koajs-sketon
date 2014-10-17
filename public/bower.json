@@ -1,0 +1,42 @@
+{
+    "name"        : "DOM",
+    "version"     : "0.0.0",
+    "authors"     : [
+        "ihor"
+    ],
+    "description" : "DOM",
+    "keywords"    : [
+        "requirejs",
+        "flightjs",
+        "jquery"
+    ],
+    "license"     : "MIT",
+    "private"     : true,
+    "ignore"      : [
+        "**/.*",
+        "node_modules",
+        "bower_components",
+        "app/js/library",
+        "test",
+        "tests"
+    ],
+    "dependencies": {
+        "flight"           : "~1.1.4",
+        "requirejs"        : "~2.1.11",
+        "jquery-cookie"    : "~1.4.0",
+        "q"                : "~1.0.0",
+        "basis-templates"  : "1.2.1",
+        "typeahead.js"     : "~0.10.2",
+        "underscore"       : "~1.6.0",
+        "numeraljs"        : "~1.5.3",
+        "uri.js"           : "~1.13.2",
+        "sr-pagination"    : "master",
+        "jquery-validation": "~1.12.0",
+        "sticky"           : "master",
+        "autocomplete"     : "git://github.com/ria-com/jQuery-Autocomplete.git#master",
+        "async"            : "*",
+        "keyboard-symbols-converter": "git://github.com/ria-com/node-keyboard-symbols-converter.git#master",
+        "jquery-validation" : "~1.13.0",
+        "plupload" : "~2.0.0"
+    }
+}

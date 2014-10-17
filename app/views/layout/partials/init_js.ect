@@ -1,0 +1,15 @@
+<script>
+    var ua = navigator.userAgent.toLowerCase(),
+            platform = navigator.platform.toLowerCase();
+    window.Browser = {
+        Platform : {
+            name: ua.match(/ip(?:ad|od|hone)/) ? 'ios' : (ua.match(/(?:webos|android)/) || platform.match(/mac|win|linux/) || ['other'])[0]
+        }
+    };
+</script>
+
+<script src="<%- @js_domain %>/js<%- @js_builds %>/library/requirejs/require.js"
+        data-lang-id="2"
+        data-main="<%- @js_domain %>/js<%- @js_builds %>/index.js?v=<%- @js_version %>"
+        data-version="<%- @js_version %>">
+</script>

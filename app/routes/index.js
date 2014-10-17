@@ -20,7 +20,8 @@ module.exports = function routes(app, passport) {
             this.logout();
             this.redirect('/login')
         })
-        .get('/secure', authed, require('../controllers/secureController').index);
+        .get('/secure', authed, require('../controllers/secureController').index)
+        .get('/', require('../controllers/indexController').list);
 
     app.use(router.middleware())
 
